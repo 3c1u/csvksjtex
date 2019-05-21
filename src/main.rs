@@ -43,14 +43,14 @@ named!(
     ws!(
         do_parse!(
             s1: take_while!(|c: char| {
-                ('0' <= c && c <= '9') || (c == '.') || (c == '-')
+                ('0' <= c && c <= '9') || (c == '.') || (c == '-') || (c == '+')
             }) >>
             tag!("E") >>
             s2: take_while!(|c: char| {
-                ('0' <= c && c <= '9') || (c == '-')
+                ('0' <= c && c <= '9') || (c == '-') || (c == '+')
             }) >>
             (
-                KsjCsvEntry::Expn(String::from(s1.0), String::from(s2.0))
+                KsjCsvEntry::Expn(String::from(s1.0), String::from(format!("{}",s2.0.parse::<i32>().unwrap())))
             )
         )
     )
