@@ -1,0 +1,9 @@
+[package]
+name = "csvksjtex"
+version = "0.1.0"
+authors = ["3c1u <298748+3c1u@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+csv = "1"
+nom = "4.2.3"
