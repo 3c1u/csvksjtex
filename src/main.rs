@@ -159,11 +159,11 @@ Copyright (c) 2019 Hikaru Terazono. All rights reserved.",
         r#"\begin{table}[!hb]
 \begin{center}
 \caption{"#,
-app.value_of("TITLE").unwrap_or("タイトル"),
-r#"}
+        app.value_of("TITLE").unwrap_or("タイトル"),
+        r#"}
 \label{tab:"#,
-app.value_of("LABEL").unwrap_or("XXX")
-,r#"}
+        app.value_of("LABEL").unwrap_or("XXX"),
+        r#"}
 \begin{tabular}{"#,
         table_fmt,
         r#"} \hline"#
