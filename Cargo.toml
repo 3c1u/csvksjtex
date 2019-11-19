@@ -1,7 +1,9 @@
 [package]
 name = "csvksjtex"
 version = "0.1.0"
-authors = ["3c1u <298748+3c1u@users.noreply.github.com>"]
+authors = ["Hikaru Terazono (3c1u) <3c1u@vulpesgames.tokyo>"]
+description = "Converts a CSV file into a LaTeX tabular (in a format compatible with Waseda University assignments)."
+license = "MIT OR Apache-2.0"
 edition = "2018"
 
 [dependencies]
